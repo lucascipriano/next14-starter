@@ -7,4 +7,4 @@
 - Radix icons
 - React icons
 
-![](githuScreen/example.gif)
+![gif](githuScreen/example.gif)
