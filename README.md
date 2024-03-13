@@ -7,5 +7,4 @@
 - Radix icons
 - React icons
 
-![](githubScreen/video.mp4)
-
+![](githuScreen/example.gif)

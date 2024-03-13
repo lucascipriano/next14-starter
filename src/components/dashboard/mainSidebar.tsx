@@ -45,7 +45,7 @@ export default function MainSidebar() {
               toolBox
             </p>
             <DotsVerticalIcon
-              className=" text-8xl rounded-full absolute -right-0  cursor-pointer"
+              className="  text-8xl rounded-full absolute -right-0  cursor-pointer"
               onClick={() => setOpenDashboard(!openDashboard)}
             />
           </div>
