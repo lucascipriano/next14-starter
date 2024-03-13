@@ -11,7 +11,7 @@ export function ToggleTheme() {
   return (
     <div
       onClick={toggleTheme}
-      className=" border w-7 h-7 flex justify-center items-center"
+      className=" border w-8 h-8 flex justify-center items-center"
     >
       {theme === 'light' ? (
         <MoonIcon className=" " />
