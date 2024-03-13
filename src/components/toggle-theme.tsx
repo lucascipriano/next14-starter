@@ -9,7 +9,10 @@ export function ToggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
-    <div onClick={toggleTheme} className=" ">
+    <div
+      onClick={toggleTheme}
+      className=" border w-7 h-7 flex justify-center items-center"
+    >
       {theme === 'light' ? (
         <MoonIcon className=" " />
       ) : (
