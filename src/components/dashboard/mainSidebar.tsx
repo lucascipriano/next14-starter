@@ -19,7 +19,7 @@ import {
   DashboardSidebarNavHeader,
   DashboardSidebarNavHeaderTitle,
   DashboardSidebarFooter
-} from '../../../../dashboard/sidebar';
+} from './dashboardSide';
 
 export default function MainSidebar() {
   const [openDashboard, setOpenDashboard] = useState(true);
@@ -52,18 +52,21 @@ export default function MainSidebar() {
         <DashboardSidebarMain className="flex flex-col flex-grow">
           <DashboardSidebarNav>
             <DashboardSidebarNavMain>
-              <DashboardSidebarNavLink href="" active={isActive('/dashboard')}>
+              <DashboardSidebarNavLink href="/" active={isActive('/')}>
                 <HomeIcon className="w-4 h-4 mr-3 ml-3" />
                 {openDashboard ? 'Home' : ''}
               </DashboardSidebarNavLink>
               <DashboardSidebarNavLink
-                href=""
-                active={isActive('/configuration')}
+                href="/settings"
+                active={isActive('/settings')}
               >
                 <GearIcon className="w-4 h-4 mr-3 ml-3" />
                 {openDashboard ? 'Configurações' : ''}
               </DashboardSidebarNavLink>
-              <DashboardSidebarNavLink href="" active={isActive('/profile')}>
+              <DashboardSidebarNavLink
+                href="/profile"
+                active={isActive('/profile')}
+              >
                 <PersonIcon className="w-4 h-4 mr-3 ml-3" />
                 {openDashboard ? 'Profile' : ''}
               </DashboardSidebarNavLink>
