@@ -20,6 +20,7 @@ import {
   DashboardSidebarNavHeaderTitle,
   DashboardSidebarFooter
 } from './dashboardSide';
+import { ToggleTheme } from '../toggle-theme';
 
 export default function MainSidebar() {
   const [openDashboard, setOpenDashboard] = useState(true);
@@ -44,7 +45,7 @@ export default function MainSidebar() {
               toolBox
             </p>
             <DotsVerticalIcon
-              className="text-black bg-white text-8xl rounded-full absolute -right-0  cursor-pointer"
+              className=" text-8xl rounded-full absolute -right-0  cursor-pointer"
               onClick={() => setOpenDashboard(!openDashboard)}
             />
           </div>
@@ -87,8 +88,8 @@ export default function MainSidebar() {
             </DashboardSidebarNavMain>
           </DashboardSidebarNav>
         </DashboardSidebarMain>
-        <DashboardSidebarFooter>
-          <h1>footer</h1>
+        <DashboardSidebarFooter className="flex justify-center">
+          <ToggleTheme />
         </DashboardSidebarFooter>
       </DashboardSidebar>
     </>
